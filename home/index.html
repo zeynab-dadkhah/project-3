@@ -13,7 +13,45 @@
     <link rel="stylesheet" href="../src/output.css">
 </head>
 
-<body>
+<!-- رنگ هر تم اینجا تعریف شده:
+گروه اول = تم دیفالت 
+ گروه دوم (blue) تم ابی
+ گروه سوم (green) = تم سبز
+    -->
+<body class="
+    [--search:#F5F5F5] [--nav:#A4A4A4] [--act:#000000]
+    [--tx:#000000] [--sub:#909090] [--bar:#2E2E2E]
+    [--bartx:#BFBFBF] [--barhv:#FFFFFF] [--sep:#6B6B6B]
+    [--hero:#211C24] [--tag:#6F6F6F] [--dsub:#909090]
+    [--hbd:#909090] [--soft1:#EDEDED] [--vis:#353535]
+    [--soft2:#FAFAFA] [--item:#EDEDED] [--page:#FFFFFF]
+    [--card:#F6F6F6] [--buy:#000000] [--t2:#F9F9F9]
+    [--t3:#EAEAEA] [--t4:#2C2C2C] [--g1:#171717]
+    [--g2:#2C2C2C] [--g3:#2E2E2E] [--sumsub:#787878]
+    [--sumbtn:#2C2C2C] [--foot:#000000]
+
+    [&.blue]:[--search:#EFF6FF] [&.blue]:[--nav:#64748B] [&.blue]:[--act:#2563EB]
+    [&.blue]:[--tx:#14213D] [&.blue]:[--sub:#64748B] [&.blue]:[--bar:#2563EB]
+    [&.blue]:[--bartx:#FFFFFF] [&.blue]:[--barhv:#14213D] [&.blue]:[--sep:#38BDF8]
+    [&.blue]:[--hero:#14213D] [&.blue]:[--tag:#38BDF8] [&.blue]:[--dsub:#EFF6FF]
+    [&.blue]:[--hbd:#38BDF8] [&.blue]:[--soft1:#EFF6FF] [&.blue]:[--vis:#2563EB]
+    [&.blue]:[--soft2:#FFFFFF] [&.blue]:[--item:#EFF6FF] [&.blue]:[--page:#EFF6FF]
+    [&.blue]:[--card:#FFFFFF] [&.blue]:[--buy:#2563EB] [&.blue]:[--t2:#EFF6FF]
+    [&.blue]:[--t3:#DBEAFE] [&.blue]:[--t4:#2563EB] [&.blue]:[--g1:#14213D]
+    [&.blue]:[--g2:#2563EB] [&.blue]:[--g3:#38BDF8] [&.blue]:[--sumsub:#EFF6FF]
+    [&.blue]:[--sumbtn:transparent] [&.blue]:[--foot:#14213D]
+
+    [&.green]:[--search:#ECFDF5] [&.green]:[--nav:#64748B] [&.green]:[--act:#10B981]
+    [&.green]:[--tx:#164E45] [&.green]:[--sub:#64748B] [&.green]:[--bar:#10B981]
+    [&.green]:[--bartx:#164E45] [&.green]:[--barhv:#FFFFFF] [&.green]:[--sep:#164E45]
+    [&.green]:[--hero:#164E45] [&.green]:[--tag:#10B981] [&.green]:[--dsub:#ECFDF5]
+    [&.green]:[--hbd:#10B981] [&.green]:[--soft1:#ECFDF5] [&.green]:[--vis:#164E45]
+    [&.green]:[--soft2:#FFFFFF] [&.green]:[--item:#ECFDF5] [&.green]:[--page:#ECFDF5]
+    [&.green]:[--card:#FFFFFF] [&.green]:[--buy:#10B981] [&.green]:[--t2:#ECFDF5]
+    [&.green]:[--t3:#D1FAE5] [&.green]:[--t4:#164E45] [&.green]:[--g1:#164E45]
+    [&.green]:[--g2:#164E45] [&.green]:[--g3:#10B981] [&.green]:[--sumsub:#ECFDF5]
+    [&.green]:[--sumbtn:transparent] [&.green]:[--foot:#164E45]
+">
     <!-- Start Header -->
     <header class="top mx-auto flex h-22 w-full max-w-360 items-center justify-between gap-3 bg-white px-40">
 
@@ -21,24 +59,24 @@
             <img src="../asset/logo/Logo (1).png" alt="">
         </a>
 
-        <label class="search flex h-14 w-108.25 items-center gap-3 rounded-lg bg-[#F5F5F5] px-4">
-            <i class="bi bi-search text-base text-[#A4A4A4]"></i>
+        <label class="search flex h-14 w-108.25 items-center gap-3 rounded-lg bg-(--search) px-4">
+            <i class="bi bi-search text-base text-(--nav)"></i>
             <input type="search" placeholder="Search"
-                class="w-full  border-0 bg-transparent text-sm text-black outline-none placeholder:text-[#A4A4A4]">
+                class="w-full  border-0 bg-transparent text-sm text-(--tx) outline-none placeholder:text-(--nav)">
         </label>
 
         <div class="links ">
             <nav>
-                <ul class="flex gap-10 text-base text-[#A4A4A4]">
-                    <li><a href="#" class="on text-black">Home</a></li>
-                    <li><a href="#" class="hover:text-black">About</a></li>
-                    <li><a href="#" class="hover:text-black">Contact Us</a></li>
-                    <li><a href="#" class="hover:text-black">Blog</a></li>
+                <ul class="flex gap-10 text-base text-(--nav)">
+                    <li><a href="#" class="on text-(--act)">Home</a></li>
+                    <li><a href="#" class="hover:text-(--act)">About</a></li>
+                    <li><a href="#" class="hover:text-(--act)">Contact Us</a></li>
+                    <li><a href="#" class="hover:text-(--act)">Blog</a></li>
                 </ul>
             </nav>
         </div>
 
-        <ul class="icons  flex items-center gap-7 text-2xl text-black">
+        <ul class="icons  flex items-center gap-7 text-2xl text-(--tx)">
             <li><a href="#" class="fav"><i class="bi bi-heart"></i></a></li>
             <li><a href="#" class="cart"><i class="bi bi-cart2"></i></a></li>
             <li><a href="#" class="user"><i class="bi bi-person"></i></a></li>
@@ -52,14 +90,14 @@
                 </div>
                 <ul tabindex="-1" class="dropdown-content bg-base-300 rounded-box z-10 w-52 p-2 shadow-2xl">
                     <li><input type="radio" name="theme-dropdown"
-                            class="theme-controller w-full btn btn-sm btn-block btn-ghost justify-start"
-                            aria-label="Default" value="default"></li>
+                            class="defBtn w-full btn btn-sm btn-block btn-ghost justify-start"
+                            aria-label="Default" value="default" checked></li>
                     <li><input type="radio" name="theme-dropdown"
-                            class="theme-controller w-full btn btn-sm btn-block btn-ghost justify-start"
-                            aria-label="Retro" value="retro"></li>
+                            class="blueBtn w-full btn btn-sm btn-block btn-ghost justify-start"
+                            aria-label="Blue" value="blue"></li>
                     <li><input type="radio" name="theme-dropdown"
-                            class="theme-controller w-full btn btn-sm btn-block btn-ghost justify-start"
-                            aria-label="Cyberpunk" value="cyberpunk"></li>
+                            class="greenBtn w-full btn btn-sm btn-block btn-ghost justify-start"
+                            aria-label="Green" value="green"></li>
                 </ul>
             </li>
         </ul>
@@ -68,37 +106,37 @@
     <!-- End Header -->
 
     <!-- Start Categories -->
-    <div class="Categories h-12 w-full bg-[#2E2E2E]">
+    <div class="Categories h-12 w-full bg-(--bar)">
         <nav class="h-full">
-            <ul class="flex h-full items-center justify-center text-base text-[#BFBFBF]">
+            <ul class="flex h-full items-center justify-center text-base text-(--bartx)">
                 <li
-                    class="flex h-6 items-center px-12 first:pl-0 last:pr-0 not-first:border-l not-first:border-[#6B6B6B]">
-                    <a href="#" class="flex items-center gap-2 hover:text-white"><i
+                    class="flex h-6 items-center px-12 first:pl-0 last:pr-0 not-first:border-l not-first:border-(--sep)">
+                    <a href="#" class="flex items-center gap-2 hover:text-(--barhv)"><i
                             class="bi bi-phone text-xl"></i>Phones</a>
                 </li>
                 <li
-                    class="flex h-6 items-center px-12 first:pl-0 last:pr-0 not-first:border-l not-first:border-[#6B6B6B]">
-                    <a href="#" class="flex items-center gap-2 hover:text-white"><i
+                    class="flex h-6 items-center px-12 first:pl-0 last:pr-0 not-first:border-l not-first:border-(--sep)">
+                    <a href="#" class="flex items-center gap-2 hover:text-(--barhv)"><i
                             class="bi bi-display text-xl"></i>Computers</a>
                 </li>
                 <li
-                    class="flex h-6 items-center px-12 first:pl-0 last:pr-0 not-first:border-l not-first:border-[#6B6B6B]">
-                    <a href="#" class="flex items-center gap-2 hover:text-white"><i
+                    class="flex h-6 items-center px-12 first:pl-0 last:pr-0 not-first:border-l not-first:border-(--sep)">
+                    <a href="#" class="flex items-center gap-2 hover:text-(--barhv)"><i
                             class="bi bi-smartwatch text-xl"></i>Smart Watches</a>
                 </li>
                 <li
-                    class="flex h-6 items-center px-12 first:pl-0 last:pr-0 not-first:border-l not-first:border-[#6B6B6B]">
-                    <a href="#" class="flex items-center gap-2 hover:text-white"><i
+                    class="flex h-6 items-center px-12 first:pl-0 last:pr-0 not-first:border-l not-first:border-(--sep)">
+                    <a href="#" class="flex items-center gap-2 hover:text-(--barhv)"><i
                             class="bi bi-camera text-xl"></i>Cameras</a>
                 </li>
                 <li
-                    class="flex h-6 items-center px-12 first:pl-0 last:pr-0 not-first:border-l not-first:border-[#6B6B6B]">
-                    <a href="#" class="flex items-center gap-2 hover:text-white"><i
+                    class="flex h-6 items-center px-12 first:pl-0 last:pr-0 not-first:border-l not-first:border-(--sep)">
+                    <a href="#" class="flex items-center gap-2 hover:text-(--barhv)"><i
                             class="bi bi-headphones text-xl"></i>Headphones</a>
                 </li>
                 <li
-                    class="flex h-6 items-center px-12 first:pl-0 last:pr-0 not-first:border-l not-first:border-[#6B6B6B]">
-                    <a href="#" class="flex items-center gap-2 hover:text-white"><i
+                    class="flex h-6 items-center px-12 first:pl-0 last:pr-0 not-first:border-l not-first:border-(--sep)">
+                    <a href="#" class="flex items-center gap-2 hover:text-(--barhv)"><i
                             class="bi bi-controller text-xl"></i>Gaming</a>
                 </li>
             </ul>
@@ -110,13 +148,13 @@
 
     <!-- Start hero -->
     <section
-        class="hero relative flex h-158 w-full flex-col items-start justify-center overflow-hidden bg-[#211C24] pl-60 text-left">
-        <p class="tag mb-2 text-[25px] text-[#6F6F6F]">Pro.Beyond.</p>
+        class="hero relative flex h-158 w-full flex-col items-start justify-center overflow-hidden bg-(--hero) pl-60 text-left">
+        <p class="tag mb-2 text-[25px] text-(--tag)">Pro.Beyond.</p>
         <h1 class="title text-[96px] leading-none font-extralight text-white">IPhone 14 <b class="font-bold">Pro</b>
         </h1>
-        <p class="desc mt-4 text-lg text-[#909090]">Created to change everything for the better. For everyone</p>
+        <p class="desc mt-4 text-lg text-(--dsub)">Created to change everything for the better. For everyone</p>
         <button
-            class="btn mt-6 h-14 w-46 cursor-pointer rounded-lg border border-[#909090] bg-[#211C24] text-base text-white">Shop
+            class="btn mt-6 h-14 w-46 cursor-pointer rounded-lg border border-(--hbd) bg-(--hero) text-base text-white">Shop
             Now</button>
         <img src="../asset/hero/Iphone Image.png" alt="iPhone 14 Pro"
             class="phone absolute right-40 bottom-0 h-140 w-102 object-contain">
@@ -128,37 +166,37 @@
 
         <article
             class="ps relative col-span-2 flex flex-col items-start justify-center overflow-hidden bg-white pl-[334px]">
-            <h2 class="ttl text-[49px] leading-tight font-medium text-black">Playstation 5</h2>
-            <p class="txt mt-3 max-w-84 text-sm leading-6 text-[#909090]">Incredibly powerful CPUs, GPUs, and an SSD
+            <h2 class="ttl text-[49px] leading-tight font-medium text-(--tx)">Playstation 5</h2>
+            <p class="txt mt-3 max-w-84 text-sm leading-6 text-(--sub)">Incredibly powerful CPUs, GPUs, and an SSD
                 with integrated I/O will redefine your PlayStation experience.</p>
             <img src="../asset/promp/promo-PlayStation.png" alt="Playstation 5"
                 class="pic absolute top-0 left-0 h-82 w-72 object-cover object-right">
         </article>
 
         <article
-            class="mac relative col-start-3 row-span-2 row-start-1 flex flex-col items-start justify-center overflow-hidden bg-[#EDEDED] pl-14">
-            <h2 class="ttl text-[64px] leading-tight font-light text-black">Macbook <b class="font-bold">Air</b></h2>
-            <p class="txt mt-3 max-w-90 text-sm leading-6 text-[#909090]">The new 15-inch MacBook Air makes room for
+            class="mac relative col-start-3 row-span-2 row-start-1 flex flex-col items-start justify-center overflow-hidden bg-(--soft1) pl-14">
+            <h2 class="ttl text-[64px] leading-tight font-light text-(--tx)">Macbook <b class="font-bold">Air</b></h2>
+            <p class="txt mt-3 max-w-90 text-sm leading-6 text-(--sub)">The new 15-inch MacBook Air makes room for
                 more of what you love with a spacious Liquid Retina display.</p>
             <button
-                class="btn mt-6 h-14 w-46 cursor-pointer rounded-lg border border-black bg-[#EDEDED] text-base text-black">Shop
+                class="btn mt-6 h-14 w-46 cursor-pointer rounded-lg border border-(--act) bg-(--soft1) text-base text-(--act)">Shop
                 Now</button>
             <img src="../asset/promp/promo-macbook.png" alt="Macbook Air"
                 class="pic absolute top-[50px] -right-[267px] h-[500px] w-[560px] object-contain object-left">
         </article>
 
-        <article class="air relative flex flex-col items-start justify-center overflow-hidden bg-[#EDEDED] pl-38">
-            <h2 class="ttl text-[29px] leading-tight font-light text-black">Apple<br>AirPods <b
+        <article class="air relative flex flex-col items-start justify-center overflow-hidden bg-(--soft1) pl-38">
+            <h2 class="ttl text-[29px] leading-tight font-light text-(--tx)">Apple<br>AirPods <b
                     class="font-bold">Max</b></h2>
-            <p class="txt mt-3 w-36 text-sm leading-6 text-[#909090]">Computational audio. Listen, it's powerful</p>
+            <p class="txt mt-3 w-36 text-sm leading-6 text-(--sub)">Computational audio. Listen, it's powerful</p>
             <img src="../asset/promp/prmo-airpod.png" alt="AirPods Max"
                 class="pic absolute top-1 -left-12.5 h-65 w-42.5 object-contain">
         </article>
 
-        <article class="vis relative flex flex-col items-start justify-center overflow-hidden bg-[#353535] pl-38">
+        <article class="vis relative flex flex-col items-start justify-center overflow-hidden bg-(--vis) pl-38">
             <h2 class="ttl text-[29px] leading-tight font-light text-white">Apple<br>Vision <b
                     class="font-semibold">Pro</b></h2>
-            <p class="txt mt-3 w-40 text-sm leading-6 text-[#909090]">An immersive way to experience entertainment</p>
+            <p class="txt mt-3 w-40 text-sm leading-6 text-(--dsub)">An immersive way to experience entertainment</p>
             <img src="../asset/promp/promo-version.png" alt="Apple Vision Pro"
                 class="pic absolute top-[70px] -left-12.5 h-30 w-40 object-contain">
         </article>
@@ -171,9 +209,9 @@
 
     <!-- Start Browse -->
     <section
-        class="browse flex flex-wrap items-center justify-between gap-y-8 bg-[#FAFAFA] px-[max(160px,calc(50%-560px))] py-20">
-        <h2 class="ttl text-2xl font-medium text-black">Browse By Category</h2>
-        <nav class="arrows flex gap-6 text-xl text-black">
+        class="browse flex flex-wrap items-center justify-between gap-y-8 bg-(--soft2) px-[max(160px,calc(50%-560px))] py-20">
+        <h2 class="ttl text-2xl font-medium text-(--tx)">Browse By Category</h2>
+        <nav class="arrows flex gap-6 text-xl text-(--tx)">
             <button class="prev cursor-pointer"><i class="bi bi-chevron-left"></i></button>
             <button class="next cursor-pointer"><i class="bi bi-chevron-right"></i></button>
         </nav>
@@ -181,172 +219,172 @@
         <swiper-container class="slider w-full" slides-per-view="6" space-between="32" navigation="true"
             navigation-prev-el=".prev" navigation-next-el=".next">
             <swiper-slide><a href="#"
-                    class="item flex h-32 flex-col items-center justify-center gap-3 rounded-xl bg-[#EDEDED] text-sm text-black"><i
+                    class="item flex h-32 flex-col items-center justify-center gap-3 rounded-xl bg-(--item) text-sm text-(--tx)"><i
                         class="bi bi-phone text-4xl"></i>Phones</a></swiper-slide>
             <swiper-slide><a href="#"
-                    class="item flex h-32 flex-col items-center justify-center gap-3 rounded-xl bg-[#EDEDED] text-sm text-black"><i
+                    class="item flex h-32 flex-col items-center justify-center gap-3 rounded-xl bg-(--item) text-sm text-(--tx)"><i
                         class="bi bi-smartwatch text-4xl"></i>Smart Watches</a></swiper-slide>
             <swiper-slide><a href="#"
-                    class="item flex h-32 flex-col items-center justify-center gap-3 rounded-xl bg-[#EDEDED] text-sm text-black"><i
+                    class="item flex h-32 flex-col items-center justify-center gap-3 rounded-xl bg-(--item) text-sm text-(--tx)"><i
                         class="bi bi-camera text-4xl"></i>Cameras</a></swiper-slide>
             <swiper-slide><a href="#"
-                    class="item flex h-32 flex-col items-center justify-center gap-3 rounded-xl bg-[#EDEDED] text-sm text-black"><i
+                    class="item flex h-32 flex-col items-center justify-center gap-3 rounded-xl bg-(--item) text-sm text-(--tx)"><i
                         class="bi bi-headphones text-4xl"></i>Headphones</a></swiper-slide>
             <swiper-slide><a href="#"
-                    class="item flex h-32 flex-col items-center justify-center gap-3 rounded-xl bg-[#EDEDED] text-sm text-black"><i
+                    class="item flex h-32 flex-col items-center justify-center gap-3 rounded-xl bg-(--item) text-sm text-(--tx)"><i
                         class="bi bi-display text-4xl"></i>Computers</a></swiper-slide>
             <swiper-slide><a href="#"
-                    class="item flex h-32 flex-col items-center justify-center gap-3 rounded-xl bg-[#EDEDED] text-sm text-black"><i
+                    class="item flex h-32 flex-col items-center justify-center gap-3 rounded-xl bg-(--item) text-sm text-(--tx)"><i
                         class="bi bi-controller text-4xl"></i>Gaming</a></swiper-slide>
             <swiper-slide><a href="#"
-                    class="item flex h-32 flex-col items-center justify-center gap-3 rounded-xl bg-[#EDEDED] text-sm text-black"><i
+                    class="item flex h-32 flex-col items-center justify-center gap-3 rounded-xl bg-(--item) text-sm text-(--tx)"><i
                         class="bi bi-tablet text-4xl"></i>iPad</a></swiper-slide>
             <swiper-slide><a href="#"
-                    class="item flex h-32 flex-col items-center justify-center gap-3 rounded-xl bg-[#EDEDED] text-sm text-black"><i
+                    class="item flex h-32 flex-col items-center justify-center gap-3 rounded-xl bg-(--item) text-sm text-(--tx)"><i
                         class="bi bi-tv text-4xl"></i>TVs</a></swiper-slide>
             <swiper-slide><a href="#"
-                    class="item flex h-32 flex-col items-center justify-center gap-3 rounded-xl bg-[#EDEDED] text-sm text-black"><i
-                        class="	bi bi-speaker text-4xl"></i>speaker</a></swiper-slide>
+                    class="item flex h-32 flex-col items-center justify-center gap-3 rounded-xl bg-(--item) text-sm text-(--tx)"><i
+                        class="bi bi-speaker text-4xl"></i>speaker</a></swiper-slide>
             <swiper-slide><a href="#"
-                    class="item flex h-32 flex-col items-center justify-center gap-3 rounded-xl bg-[#EDEDED] text-sm text-black"><i
-                        class="	bi bi-mic text-4xl"></i>Microphones</a></swiper-slide>
+                    class="item flex h-32 flex-col items-center justify-center gap-3 rounded-xl bg-(--item) text-sm text-(--tx)"><i
+                        class="bi bi-mic text-4xl"></i>Microphones</a></swiper-slide>
         </swiper-container>
     </section>
     <!-- End Browse -->
 
 
     <!-- Start prod(cards) -->
-    <section class="prod bg-white px-[max(160px,calc(50%-560px))] py-14">
-        <nav class="pick mb-9 flex gap-8 text-base text-[#909090]">
-            <a href="#" class="on border-b border-black pb-2 text-black">New Arrival</a>
+    <section class="prod bg-(--page) px-[max(160px,calc(50%-560px))] py-14">
+        <nav class="pick mb-9 flex gap-8 text-base text-(--sub)">
+            <a href="#" class="on border-b border-(--act) pb-2 text-(--tx)">New Arrival</a>
             <a href="#">Bestseller</a>
             <a href="#">Featured Products</a>
         </nav>
 
         <div class="list grid grid-cols-4 gap-4">
 
-            <div class="card relative h-108 w-67 bg-[#F6F6F6] pb-7 shadow-none">
+            <div class="card relative h-108 w-67 bg-(--card) pb-7 shadow-none">
                 <label class="like absolute top-7 right-6 cursor-pointer text-xl"><input type="checkbox"
-                        class="peer hidden"><i class="bi bi-heart text-[#909090] peer-checked:hidden"></i><i
+                        class="peer hidden"><i class="bi bi-heart text-(--sub) peer-checked:hidden"></i><i
                         class="bi bi-heart-fill hidden text-red-500 peer-checked:block"></i></label>
                 <figure class="mx-auto mt-16 mb-5 h-40 w-40"><img src="../asset/products/Iphone 14 pro 1.png"
                         alt="iPhone 14 Pro Max" class="pic h-40 w-40 object-contain"></figure>
                 <div class="card-body items-center gap-0 p-0">
-                    <h2 class="name h-12 w-64 text-center text-base leading-6 text-black">Apple iPhone 14 Pro Max 128GB
+                    <h2 class="name h-12 w-64 text-center text-base leading-6 text-(--tx)">Apple iPhone 14 Pro Max 128GB
                         Deep Purple (MQ9T3RX/A)</h2>
-                    <p class="price mt-3 text-2xl font-medium text-black">$900</p>
+                    <p class="price mt-3 text-2xl font-medium text-(--tx)">$900</p>
                     <div class="card-actions mt-[19px]"><button
-                            class="btn buy h-12 w-45.75 rounded-lg border-0 bg-black text-sm font-medium text-white shadow-none">Buy
+                            class="btn buy h-12 w-45.75 rounded-lg border-0 bg-(--buy) text-sm font-medium text-white shadow-none">Buy
                             Now</button></div>
                 </div>
             </div>
 
-            <div class="card relative h-108 w-67 bg-[#F6F6F6] pb-7 shadow-none">
+            <div class="card relative h-108 w-67 bg-(--card) pb-7 shadow-none">
                 <label class="like absolute top-7 right-6 cursor-pointer text-xl"><input type="checkbox"
-                        class="peer hidden"><i class="bi bi-heart text-[#909090] peer-checked:hidden"></i><i
+                        class="peer hidden"><i class="bi bi-heart text-(--sub) peer-checked:hidden"></i><i
                         class="bi bi-heart-fill hidden text-red-500 peer-checked:block"></i></label>
                 <figure class="mx-auto mt-16 mb-5 h-40 w-40"><img src="../asset/products/camera.png"
                         alt="Blackmagic Pocket Cinema Camera 6k" class="pic h-40 w-40 object-contain"></figure>
                 <div class="card-body items-center gap-0 p-0">
-                    <h2 class="name h-12 w-64 text-center text-base leading-6 text-black">Blackmagic Pocket Cinema
+                    <h2 class="name h-12 w-64 text-center text-base leading-6 text-(--tx)">Blackmagic Pocket Cinema
                         Camera 6k</h2>
-                    <p class="price mt-3 text-2xl font-medium text-black">$2535</p>
+                    <p class="price mt-3 text-2xl font-medium text-(--tx)">$2535</p>
                     <div class="card-actions mt-[19px]"><button
-                            class="btn buy h-12 w-45.75 rounded-lg border-0 bg-black text-sm font-medium text-white shadow-none">Buy
+                            class="btn buy h-12 w-45.75 rounded-lg border-0 bg-(--buy) text-sm font-medium text-white shadow-none">Buy
                             Now</button></div>
                 </div>
             </div>
 
-            <div class="card relative h-108 w-67 bg-[#F6F6F6] pb-7 shadow-none">
+            <div class="card relative h-108 w-67 bg-(--card) pb-7 shadow-none">
                 <label class="like absolute top-7 right-6 cursor-pointer text-xl"><input type="checkbox"
-                        class="peer hidden"><i class="bi bi-heart text-[#909090] peer-checked:hidden"></i><i
+                        class="peer hidden"><i class="bi bi-heart text-(--sub) peer-checked:hidden"></i><i
                         class="bi bi-heart-fill hidden text-red-500 peer-checked:block"></i></label>
                 <figure class="mx-auto mt-16 mb-5 h-40 w-40"><img src="../asset/products/smar twhtach.png"
                         alt="Apple Watch Series 9" class="pic h-40 w-40 object-contain"></figure>
                 <div class="card-body items-center gap-0 p-0">
-                    <h2 class="name h-12 w-64 text-center text-base leading-6 text-black">Apple Watch Series 9 GPS 41mm
+                    <h2 class="name h-12 w-64 text-center text-base leading-6 text-(--tx)">Apple Watch Series 9 GPS 41mm
                         Starlight Aluminium Case</h2>
-                    <p class="price mt-3 text-2xl font-medium text-black">$399</p>
+                    <p class="price mt-3 text-2xl font-medium text-(--tx)">$399</p>
                     <div class="card-actions mt-[19px]"><button
-                            class="btn buy h-12 w-45.75 rounded-lg border-0 bg-black text-sm font-medium text-white shadow-none">Buy
+                            class="btn buy h-12 w-45.75 rounded-lg border-0 bg-(--buy) text-sm font-medium text-white shadow-none">Buy
                             Now</button></div>
                 </div>
             </div>
 
-            <div class="card relative h-108 w-67 bg-[#F6F6F6] pb-7 shadow-none">
+            <div class="card relative h-108 w-67 bg-(--card) pb-7 shadow-none">
                 <label class="like absolute top-7 right-6 cursor-pointer text-xl"><input type="checkbox"
-                        class="peer hidden"><i class="bi bi-heart text-[#909090] peer-checked:hidden"></i><i
+                        class="peer hidden"><i class="bi bi-heart text-(--sub) peer-checked:hidden"></i><i
                         class="bi bi-heart-fill hidden text-red-500 peer-checked:block"></i></label>
                 <figure class="mx-auto mt-16 mb-5 h-40 w-40"><img src="../asset/products/headphones.png"
                         alt="AirPods Max Silver" class="pic h-40 w-40 object-contain"></figure>
                 <div class="card-body items-center gap-0 p-0">
-                    <h2 class="name h-12 w-64 text-center text-base leading-6 text-black">AirPods Max Silver</h2>
-                    <p class="price mt-3 text-2xl font-medium text-black">$549</p>
+                    <h2 class="name h-12 w-64 text-center text-base leading-6 text-(--tx)">AirPods Max Silver</h2>
+                    <p class="price mt-3 text-2xl font-medium text-(--tx)">$549</p>
                     <div class="card-actions mt-[19px]"><button
-                            class="btn buy h-12 w-45.75 rounded-lg border-0 bg-black text-sm font-medium text-white shadow-none">Buy
+                            class="btn buy h-12 w-45.75 rounded-lg border-0 bg-(--buy) text-sm font-medium text-white shadow-none">Buy
                             Now</button></div>
                 </div>
             </div>
 
-            <div class="card relative h-108 w-67 bg-[#F6F6F6] pb-7 shadow-none">
+            <div class="card relative h-108 w-67 bg-(--card) pb-7 shadow-none">
                 <label class="like absolute top-7 right-6 cursor-pointer text-xl"><input type="checkbox"
-                        class="peer hidden"><i class="bi bi-heart text-[#909090] peer-checked:hidden"></i><i
+                        class="peer hidden"><i class="bi bi-heart text-(--sub) peer-checked:hidden"></i><i
                         class="bi bi-heart-fill hidden text-red-500 peer-checked:block"></i></label>
                 <figure class="mx-auto mt-16 mb-5 h-40 w-40"><img src="../asset/products/whatch.png"
                         alt="Samsung Galaxy Watch6 Classic" class="pic h-40 w-40 object-contain"></figure>
                 <div class="card-body items-center gap-0 p-0">
-                    <h2 class="name h-12 w-64 text-center text-base leading-6 text-black">Samsung Galaxy Watch6 Classic
+                    <h2 class="name h-12 w-64 text-center text-base leading-6 text-(--tx)">Samsung Galaxy Watch6 Classic
                         47mm Black</h2>
-                    <p class="price mt-3 text-2xl font-medium text-black">$369</p>
+                    <p class="price mt-3 text-2xl font-medium text-(--tx)">$369</p>
                     <div class="card-actions mt-[19px]"><button
-                            class="btn buy h-12 w-45.75 rounded-lg border-0 bg-black text-sm font-medium text-white shadow-none">Buy
+                            class="btn buy h-12 w-45.75 rounded-lg border-0 bg-(--buy) text-sm font-medium text-white shadow-none">Buy
                             Now</button></div>
                 </div>
             </div>
 
-            <div class="card relative h-108 w-67 bg-[#F6F6F6] pb-7 shadow-none">
+            <div class="card relative h-108 w-67 bg-(--card) pb-7 shadow-none">
                 <label class="like absolute top-7 right-6 cursor-pointer text-xl"><input type="checkbox"
-                        class="peer hidden" checked><i class="bi bi-heart text-[#909090] peer-checked:hidden"></i><i
+                        class="peer hidden" checked><i class="bi bi-heart text-(--sub) peer-checked:hidden"></i><i
                         class="bi bi-heart-fill hidden text-red-500 peer-checked:block"></i></label>
                 <figure class="mx-auto mt-16 mb-5 h-40 w-40"><img src="../asset/products/galaxy z-fold.png"
                         alt="Galaxy Z Fold5" class="pic h-40 w-40 object-contain"></figure>
                 <div class="card-body items-center gap-0 p-0">
-                    <h2 class="name h-12 w-64 text-center text-base leading-6 text-black">Galaxy Z Fold5 Unlocked |
+                    <h2 class="name h-12 w-64 text-center text-base leading-6 text-(--tx)">Galaxy Z Fold5 Unlocked |
                         256GB | Phantom Black</h2>
-                    <p class="price mt-3 text-2xl font-medium text-black">$1799</p>
+                    <p class="price mt-3 text-2xl font-medium text-(--tx)">$1799</p>
                     <div class="card-actions mt-[19px]"><button
-                            class="btn buy h-12 w-45.75 rounded-lg border-0 bg-black text-sm font-medium text-white shadow-none">Buy
+                            class="btn buy h-12 w-45.75 rounded-lg border-0 bg-(--buy) text-sm font-medium text-white shadow-none">Buy
                             Now</button></div>
                 </div>
             </div>
 
-            <div class="card relative h-108 w-67 bg-[#F6F6F6] pb-7 shadow-none">
+            <div class="card relative h-108 w-67 bg-(--card) pb-7 shadow-none">
                 <label class="like absolute top-7 right-6 cursor-pointer text-xl"><input type="checkbox"
-                        class="peer hidden"><i class="bi bi-heart text-[#909090] peer-checked:hidden"></i><i
+                        class="peer hidden"><i class="bi bi-heart text-(--sub) peer-checked:hidden"></i><i
                         class="bi bi-heart-fill hidden text-red-500 peer-checked:block"></i></label>
                 <figure class="mx-auto mt-16 mb-5 h-40 w-40"><img src="../asset/products/galaxy-airpod.png"
                         alt="Galaxy Buds FE" class="pic h-40 w-40 object-contain"></figure>
                 <div class="card-body items-center gap-0 p-0">
-                    <h2 class="name h-12 w-64 text-center text-base leading-6 text-black">Galaxy Buds FE Graphite</h2>
-                    <p class="price mt-3 text-2xl font-medium text-black">$99.99</p>
+                    <h2 class="name h-12 w-64 text-center text-base leading-6 text-(--tx)">Galaxy Buds FE Graphite</h2>
+                    <p class="price mt-3 text-2xl font-medium text-(--tx)">$99.99</p>
                     <div class="card-actions mt-[19px]"><button
-                            class="btn buy h-12 w-45.75 rounded-lg border-0 bg-black text-sm font-medium text-white shadow-none">Buy
+                            class="btn buy h-12 w-45.75 rounded-lg border-0 bg-(--buy) text-sm font-medium text-white shadow-none">Buy
                             Now</button></div>
                 </div>
             </div>
 
-            <div class="card relative h-108 w-67 bg-[#F6F6F6] pb-7 shadow-none">
+            <div class="card relative h-108 w-67 bg-(--card) pb-7 shadow-none">
                 <label class="like absolute top-7 right-6 cursor-pointer text-xl"><input type="checkbox"
-                        class="peer hidden"><i class="bi bi-heart text-[#909090] peer-checked:hidden"></i><i
+                        class="peer hidden"><i class="bi bi-heart text-(--sub) peer-checked:hidden"></i><i
                         class="bi bi-heart-fill hidden text-red-500 peer-checked:block"></i></label>
                 <figure class="mx-auto mt-16 mb-5 h-40 w-40"><img src="../asset/products/ipad.png" alt="Apple iPad 9"
                         class="pic h-40 w-40 object-contain"></figure>
                 <div class="card-body items-center gap-0 p-0">
-                    <h2 class="name h-12 w-64 text-center text-base leading-6 text-black">Apple iPad 9 10.2" 64GB Wi-Fi
+                    <h2 class="name h-12 w-64 text-center text-base leading-6 text-(--tx)">Apple iPad 9 10.2" 64GB Wi-Fi
                         Silver (MK2L3) 2021</h2>
-                    <p class="price mt-3 text-2xl font-medium text-black">$398</p>
+                    <p class="price mt-3 text-2xl font-medium text-(--tx)">$398</p>
                     <div class="card-actions mt-[19px]"><button
-                            class="btn buy h-12 w-45.75 rounded-lg border-0 bg-black text-sm font-medium text-white shadow-none">Buy
+                            class="btn buy h-12 w-45.75 rounded-lg border-0 bg-(--buy) text-sm font-medium text-white shadow-none">Buy
                             Now</button></div>
                 </div>
             </div>
@@ -364,44 +402,44 @@
             <img src="../asset/featur/airpod.png" alt="Huawei FreeBuds" class="pic absolute top-0 left-0 -z-10 w-90">
             <img src="../asset/featur/whatch.png" alt="Huawei Watch"
                 class="pic absolute top-14 left-[117px] -z-10 w-70">
-            <h2 class="ttl text-[33px] leading-10 font-light text-black">Popular Products</h2>
-            <p class="txt mt-4 h-18 max-w-72 text-sm leading-6 text-[#909090]">iPad combines a magnificent 10.2-inch
+            <h2 class="ttl text-[33px] leading-10 font-light text-(--tx)">Popular Products</h2>
+            <p class="txt mt-4 h-18 max-w-72 text-sm leading-6 text-(--sub)">iPad combines a magnificent 10.2-inch
                 Retina display, incredible performance, multitasking and ease of use.</p>
             <button
-                class="btn mt-6 h-14 w-46 cursor-pointer rounded-lg border border-black bg-white text-base text-black">Shop
+                class="btn mt-6 h-14 w-46 cursor-pointer rounded-lg border border-(--act) bg-white text-base text-(--act)">Shop
                 Now</button>
         </article>
 
-        <article class="tile relative flex flex-col items-start overflow-hidden bg-[#F9F9F9] pt-[382px] pl-8">
+        <article class="tile relative flex flex-col items-start overflow-hidden bg-(--t2) pt-[382px] pl-8">
             <img src="../asset/featur/ipad.png" alt="Ipad Pro"
                 class="pic absolute top-0 left-[35px] h-84 w-[400px] object-contain object-left">
-            <h2 class="ttl text-[33px] leading-10 font-light text-black">Ipad Pro</h2>
-            <p class="txt mt-4 h-18 max-w-72 text-sm leading-6 text-[#909090]">iPad combines a magnificent 10.2-inch
+            <h2 class="ttl text-[33px] leading-10 font-light text-(--tx)">Ipad Pro</h2>
+            <p class="txt mt-4 h-18 max-w-72 text-sm leading-6 text-(--sub)">iPad combines a magnificent 10.2-inch
                 Retina display, incredible performance, multitasking and ease of use.</p>
             <button
-                class="btn mt-6 h-14 w-46 cursor-pointer rounded-lg border border-black bg-[#F9F9F9] text-base text-black">Shop
+                class="btn mt-6 h-14 w-46 cursor-pointer rounded-lg border border-(--act) bg-(--t2) text-base text-(--act)">Shop
                 Now</button>
         </article>
 
-        <article class="tile relative flex flex-col items-start overflow-hidden bg-[#EAEAEA] pt-[382px] pl-8">
+        <article class="tile relative flex flex-col items-start overflow-hidden bg-(--t3) pt-[382px] pl-8">
             <img src="../asset/featur/galaxy z-fold.png" alt="Samsung Galaxy"
                 class="pic absolute top-0 left-[52px] h-86 w-[253px] object-contain">
-            <h2 class="ttl text-[33px] leading-10 font-light text-black">Samsung Galaxy</h2>
-            <p class="txt mt-4 h-18 max-w-72 text-sm leading-6 text-[#909090]">iPad combines a magnificent 10.2-inch
+            <h2 class="ttl text-[33px] leading-10 font-light text-(--tx)">Samsung Galaxy</h2>
+            <p class="txt mt-4 h-18 max-w-72 text-sm leading-6 text-(--sub)">iPad combines a magnificent 10.2-inch
                 Retina display, incredible performance, multitasking and ease of use.</p>
             <button
-                class="btn mt-6 h-14 w-46 cursor-pointer rounded-lg border border-black bg-[#EAEAEA] text-base text-black">Shop
+                class="btn mt-6 h-14 w-46 cursor-pointer rounded-lg border border-(--act) bg-(--t3) text-base text-(--act)">Shop
                 Now</button>
         </article>
 
-        <article class="tile relative flex flex-col items-start overflow-hidden bg-[#2C2C2C] pt-[382px] pl-8">
+        <article class="tile relative flex flex-col items-start overflow-hidden bg-(--t4) pt-[382px] pl-8">
             <img src="../asset/featur/Macbook.png" alt="Macbook Pro"
                 class="pic absolute top-[35px] right-0 h-80 w-[400px] object-contain object-right">
             <h2 class="ttl text-[33px] leading-10 font-light text-white">Macbook Pro</h2>
-            <p class="txt mt-4 h-18 max-w-72 text-sm leading-6 text-[#909090]">iPad combines a magnificent 10.2-inch
+            <p class="txt mt-4 h-18 max-w-72 text-sm leading-6 text-(--dsub)">iPad combines a magnificent 10.2-inch
                 Retina display, incredible performance, multitasking and ease of use.</p>
             <button
-                class="btn mt-6 h-14 w-46 cursor-pointer rounded-lg border border-white bg-[#2C2C2C] text-base text-white shadow-none">Shop
+                class="btn mt-6 h-14 w-46 cursor-pointer rounded-lg border border-white bg-(--t4) text-base text-white shadow-none">Shop
                 Now</button>
         </article>
 
@@ -410,70 +448,70 @@
 
 
     <!-- Start Discount -->
-    <section class="sale bg-white px-[max(160px,calc(50%-560px))] py-20">
-        <h2 class="head mb-8 text-2xl font-medium text-black">Discounts up to -50%</h2>
+    <section class="sale bg-(--page) px-[max(160px,calc(50%-560px))] py-20">
+        <h2 class="head mb-8 text-2xl font-medium text-(--tx)">Discounts up to -50%</h2>
 
         <div class="deals grid grid-cols-4 gap-4">
 
-            <div class="card deal relative h-108 w-67 bg-[#F6F6F6] pb-7 shadow-none">
+            <div class="card deal relative h-108 w-67 bg-(--card) pb-7 shadow-none">
                 <label class="heart absolute top-7 right-6 cursor-pointer text-xl"><input type="checkbox"
-                        class="peer hidden"><i class="bi bi-heart text-[#909090] peer-checked:hidden"></i><i
+                        class="peer hidden"><i class="bi bi-heart text-(--sub) peer-checked:hidden"></i><i
                         class="bi bi-heart-fill hidden text-red-500 peer-checked:block"></i></label>
                 <figure class="mx-auto mt-16 mb-5 h-40 w-40"><img src="../asset/discount/Iphone 14 pro w (1).png"
                         alt="iPhone 14 Pro 512GB Gold" class="photo h-40 w-40 object-contain"></figure>
                 <div class="card-body items-center gap-0 p-0">
-                    <h2 class="tit h-12 w-64 text-center text-base leading-6 text-black">Apple iPhone 14 Pro 512GB Gold
+                    <h2 class="tit h-12 w-64 text-center text-base leading-6 text-(--tx)">Apple iPhone 14 Pro 512GB Gold
                         (MQ233)</h2>
-                    <p class="cost mt-3 text-2xl font-medium text-black">$1437</p>
+                    <p class="cost mt-3 text-2xl font-medium text-(--tx)">$1437</p>
                     <div class="card-actions mt-[19px]"><button
-                            class="btn get h-12 w-45.75 rounded-lg border-0 bg-black text-sm font-medium text-white shadow-none">Buy
+                            class="btn get h-12 w-45.75 rounded-lg border-0 bg-(--buy) text-sm font-medium text-white shadow-none">Buy
                             Now</button></div>
                 </div>
             </div>
 
-            <div class="card deal relative h-108 w-67 bg-[#F6F6F6] pb-7 shadow-none">
+            <div class="card deal relative h-108 w-67 bg-(--card) pb-7 shadow-none">
                 <label class="heart absolute top-7 right-6 cursor-pointer text-xl"><input type="checkbox"
-                        class="peer hidden"><i class="bi bi-heart text-[#909090] peer-checked:hidden"></i><i
+                        class="peer hidden"><i class="bi bi-heart text-(--sub) peer-checked:hidden"></i><i
                         class="bi bi-heart-fill hidden text-red-500 peer-checked:block"></i></label>
                 <figure class="mx-auto mt-16 mb-5 h-40 w-40"><img src="../asset/discount/headphone.png"
                         alt="AirPods Max Silver" class="photo h-40 w-40 object-contain"></figure>
                 <div class="card-body items-center gap-0 p-0">
-                    <h2 class="tit h-12 w-64 text-center text-base leading-6 text-black">AirPods Max Silver</h2>
-                    <p class="cost mt-3 text-2xl font-medium text-black">$549</p>
+                    <h2 class="tit h-12 w-64 text-center text-base leading-6 text-(--tx)">AirPods Max Silver</h2>
+                    <p class="cost mt-3 text-2xl font-medium text-(--tx)">$549</p>
                     <div class="card-actions mt-[19px]"><button
-                            class="btn get h-12 w-45.75 rounded-lg border-0 bg-black text-sm font-medium text-white shadow-none">Buy
+                            class="btn get h-12 w-45.75 rounded-lg border-0 bg-(--buy) text-sm font-medium text-white shadow-none">Buy
                             Now</button></div>
                 </div>
             </div>
 
-            <div class="card deal relative h-108 w-67 bg-[#F6F6F6] pb-7 shadow-none">
+            <div class="card deal relative h-108 w-67 bg-(--card) pb-7 shadow-none">
                 <label class="heart absolute top-7 right-6 cursor-pointer text-xl"><input type="checkbox"
-                        class="peer hidden"><i class="bi bi-heart text-[#909090] peer-checked:hidden"></i><i
+                        class="peer hidden"><i class="bi bi-heart text-(--sub) peer-checked:hidden"></i><i
                         class="bi bi-heart-fill hidden text-red-500 peer-checked:block"></i></label>
                 <figure class="mx-auto mt-16 mb-5 h-40 w-40"><img src="../asset/discount/watch.png"
                         alt="Apple Watch Series 9" class="photo h-40 w-40 object-contain"></figure>
                 <div class="card-body items-center gap-0 p-0">
-                    <h2 class="tit h-12 w-64 text-center text-base leading-6 text-black">Apple Watch Series 9 GPS 41mm
+                    <h2 class="tit h-12 w-64 text-center text-base leading-6 text-(--tx)">Apple Watch Series 9 GPS 41mm
                         Starlight Aluminium Case</h2>
-                    <p class="cost mt-3 text-2xl font-medium text-black">$399</p>
+                    <p class="cost mt-3 text-2xl font-medium text-(--tx)">$399</p>
                     <div class="card-actions mt-[19px]"><button
-                            class="btn get h-12 w-45.75 rounded-lg border-0 bg-black text-sm font-medium text-white shadow-none">Buy
+                            class="btn get h-12 w-45.75 rounded-lg border-0 bg-(--buy) text-sm font-medium text-white shadow-none">Buy
                             Now</button></div>
                 </div>
             </div>
 
-            <div class="card deal relative h-108 w-67 bg-[#F6F6F6] pb-7 shadow-none">
+            <div class="card deal relative h-108 w-67 bg-(--card) pb-7 shadow-none">
                 <label class="heart absolute top-7 right-6 cursor-pointer text-xl"><input type="checkbox"
-                        class="peer hidden"><i class="bi bi-heart text-[#909090] peer-checked:hidden"></i><i
+                        class="peer hidden"><i class="bi bi-heart text-(--sub) peer-checked:hidden"></i><i
                         class="bi bi-heart-fill hidden text-red-500 peer-checked:block"></i></label>
                 <figure class="mx-auto mt-16 mb-5 h-40 w-40"><img src="../asset/discount/Iphone 14 pro y.png"
                         alt="iPhone 14 Pro 1TB Gold" class="photo h-40 w-40 object-contain"></figure>
                 <div class="card-body items-center gap-0 p-0">
-                    <h2 class="tit h-12 w-64 text-center text-base leading-6 text-black">Apple iPhone 14 Pro 1TB Gold
+                    <h2 class="tit h-12 w-64 text-center text-base leading-6 text-(--tx)">Apple iPhone 14 Pro 1TB Gold
                         (MQ2V3)</h2>
-                    <p class="cost mt-3 text-2xl font-medium text-black">$1499</p>
+                    <p class="cost mt-3 text-2xl font-medium text-(--tx)">$1499</p>
                     <div class="card-actions mt-[19px]"><button
-                            class="btn get h-12 w-45.75 rounded-lg border-0 bg-black text-sm font-medium text-white shadow-none">Buy
+                            class="btn get h-12 w-45.75 rounded-lg border-0 bg-(--buy) text-sm font-medium text-white shadow-none">Buy
                             Now</button></div>
                 </div>
             </div>
@@ -484,11 +522,11 @@
 
     <!-- Start Big Sum -->
     <section
-        class="sum relative flex h-112 w-full flex-col items-center overflow-hidden bg-linear-to-l from-[#171717] via-[#2C2C2C] to-[#2E2E2E] pt-[159px]">
+        class="sum relative flex h-112 w-full flex-col items-center overflow-hidden bg-linear-to-l from-(--g1) via-(--g2) to-(--g3) pt-[159px]">
         <h2 class="ttl text-[72px] leading-none font-light text-white">Big Summer <b class="font-bold">Sale</b></h2>
-        <p class="txt mt-3 text-base text-[#787878]">Commodo fames vitae vitae leo mauris in. Eu consequat.</p>
+        <p class="txt mt-3 text-base text-(--sumsub)">Commodo fames vitae vitae leo mauris in. Eu consequat.</p>
         <button
-            class="btn mt-6 h-14 w-46 cursor-pointer rounded-lg border border-white bg-[#2C2C2C] text-base text-white shadow-none">Shop
+            class="btn mt-6 h-14 w-46 cursor-pointer rounded-lg border border-white bg-(--sumbtn) text-base text-white shadow-none">Shop
             Now</button>
 
         <img src="../asset/big sum/case.png" alt="Macbook"
@@ -507,14 +545,14 @@
 
     <!-- Start Footer -->
 
-    <footer class="foot bg-black px-[max(160px,calc(50%-560px))] py-[102px] text-white">
+    <footer class="foot bg-(--foot) px-[max(160px,calc(50%-560px))] py-[102px] text-white">
 
         <div class="cols grid grid-cols-[497px_329px_1fr]">
             <section class="about">
                 <a href="#" class="logo block h-8 w-24">
                     <img src="../asset/featur/Logooooo.png" alt="">
                 </a>
-                <p class="txt mt-2. max-w-96 text-sm leading-6">We are a residential interior design firm located in
+                <p class="txt mt-2.5 max-w-96 text-sm leading-6">We are a residential interior design firm located in
                     Portland. Our boutique-studio offers more than</p>
             </section>
 
@@ -554,6 +592,7 @@
 
 
     <!-- End Footer -->
+    <script src="./main.js"></script>
 </body>
 
 </html>
