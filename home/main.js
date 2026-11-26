@@ -173,5 +173,49 @@ fetchBestProducts();
 
 
 
+let fetchFeature = async () => {
+
+    let resFeature = await fetch("http://localhost:3000/featureProducts");
+    let dataFeature = await resFeature.json();
+
+    let feature = document.querySelector(".feat");
+
+    dataFeature.forEach((elem) => {
+
+        feature.innerHTML += `
+            <article class="tile relative isolate flex flex-col items-start overflow-hidden pt-[382px] pl-8"
+                style="background: ${elem.background}">
+
+             ${elem.image1 ? `
+            <img src="${elem.image1}" alt="${elem.title}" class="pic absolute top-0 left-0 -z-10 w-90">
+             <img src="${elem.image2}" alt="${elem.title}" class="pic absolute top-14 left-[117px] -z-10 w-70">
+           ` : elem.title === "Macbook Pro" ? `
+             <img src="${elem.image}" alt="${elem.title}" class="pic absolute top-[35px] right-0 -z-10 h-80 w-[400px] object-contain object-right">
+             ` : `
+              <img src="${elem.image}" alt="${elem.title}" class="pic absolute top-0 left-[35px] -z-10 h-84 w-[400px] object-contain object-left">
+              `}
+
+                <h2 class="ttl text-[33px] leading-10 font-light ${elem.titleColor}">
+                    ${elem.title}
+                </h2>
+
+                <p class="txt mt-4 h-18 max-w-72 text-sm leading-6 ${elem.textColor}">
+                    ${elem.description}
+                </p>
+
+                <button class="btn mt-6 h-14 w-46 cursor-pointer rounded-lg border border-(--act) text-base text-(--act) shadow-none">
+                    Shop Now
+                </button>
+
+            </article>
+        `;
+
+    });
+
+};
+
+fetchFeature();
+
+
 
 

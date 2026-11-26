@@ -161,5 +161,40 @@
         "price": "$399",
         "image": "../asset/products/smartwhatch.png"
     }
+],
+"featureProducts": [
+    {
+        "title": "Popular Products",
+        "description": "iPad combines a magnificent 10.2-inch Retina display, incredible performance, multitasking and ease of use.",
+        "image1": "../asset/featur/airpod.png",
+        "image2": "../asset/featur/whatch.png",
+        "background": "white",
+        "titleColor": "text-(--tx)",
+        "textColor": "text-(--sub)"
+    },
+    {
+        "title": "Ipad Pro",
+        "description": "iPad combines a magnificent 10.2-inch Retina display, incredible performance, multitasking and ease of use.",
+        "image": "../asset/featur/ipad.png",
+        "background": "var(--t2)",
+        "titleColor": "text-(--tx)",
+        "textColor": "text-(--sub)"
+    },
+    {
+        "title": "Samsung Galaxy",
+        "description": "iPad combines a magnificent 10.2-inch Retina display, incredible performance, multitasking and ease of use.",
+        "image": "../asset/featur/galaxy z-fold.png",
+        "background": "var(--t3)",
+        "titleColor": "text-(--tx)",
+        "textColor": "text-(--sub)"
+    },
+    {
+        "title": "Macbook Pro",
+        "description": "iPad combines a magnificent 10.2-inch Retina display, incredible performance, multitasking and ease of use.",
+        "image": "../asset/featur/Macbook.png",
+        "background": "var(--t4)",
+        "titleColor": "text-white",
+        "textColor": "text-(--dsub)"
+    }
 ]
 }
