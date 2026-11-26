@@ -68,3 +68,25 @@ let fetchBrowse = async () => {
 
 fetchBrowse();
 
+
+//  کارت ها شدن عوض
+let newBtn = document.querySelector(".newBtn")
+let bestBtn = document.querySelector(".bestBtn")
+let newList = document.querySelector(".newList")
+let bestList = document.querySelector(".bestList")
+
+newBtn.addEventListener("click", function () {
+    newList.classList.remove("hide")
+    bestList.classList.add("hide")
+    newBtn.classList.add("on")
+    bestBtn.classList.remove("on")
+})
+
+bestBtn.addEventListener("click", function () {
+    bestList.classList.remove("hide")
+    newList.classList.add("hide")
+    bestBtn.classList.add("on")
+    newBtn.classList.remove("on")
+})
+
+
