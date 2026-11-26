@@ -1,0 +1,80 @@
+{
+"categories": [
+  {
+    "title": "Phones",
+    "icon": "bi bi-phone"
+  },
+  {
+    "title": "Computers",
+    "icon": "bi bi-display"
+  },
+  {
+    "title": "Smart Watches",
+    "icon": "bi bi-smartwatch"
+  },
+  {
+    "title": "Cameras",
+    "icon": "bi bi-camera"
+  },
+  {
+    "title": "Headphones",
+    "icon": "bi bi-headphones"
+  },
+  {
+    "title": "Gaming",
+    "icon": "bi bi-controller"
+  }
+],
+"browseCategories": [
+  {
+    "title": "Phones",
+    "icon": "bi bi-phone",
+    "href": "#"
+  },
+  {
+    "title": "Smart Watches",
+    "icon": "bi bi-smartwatch",
+    "href": "#"
+  },
+  {
+    "title": "Cameras",
+    "icon": "bi bi-camera",
+    "href": "#"
+  },
+  {
+    "title": "Headphones",
+    "icon": "bi bi-headphones",
+    "href": "#"
+  },
+  {
+    "title": "Computers",
+    "icon": "bi bi-display",
+    "href": "#"
+  },
+  {
+    "title": "Gaming",
+    "icon": "bi bi-controller",
+    "href": "#"
+  },
+  {
+    "title": "iPad",
+    "icon": "bi bi-tablet",
+    "href": "#"
+  },
+  {
+    "title": "TVs",
+    "icon": "bi bi-tv",
+    "href": "#"
+  },
+  {
+    "title": "Speaker",
+    "icon": "bi bi-speaker",
+    "href": "#"
+  },
+  {
+    "title": "Microphones",
+    "icon": "bi bi-mic",
+    "href": "#"
+  }
+]
+}

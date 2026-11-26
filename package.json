@@ -1,10 +1,42 @@
 {
+  "name": "project-3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "dependencies": {
-    "@tailwindcss/cli": "^4.3.5",
     "bootstrap-icons": "^1.13.2",
-    "tailwindcss": "^4.3.5"
+    "daisyui": "^5.8.2",
+    "detect-libc": "^2.1.2",
+    "enhanced-resolve": "^5.27.0",
+    "graceful-fs": "^4.2.12",
+    "is-extglob": "^2.1.1",
+    "is-glob": "^4.0.3",
+    "jiti": "^2.7.0",
+    "json-server": "^1.0.0-beta.15",
+    "lightningcss": "^1.33.0",
+    "lightningcss-win32-x64-msvc": "^1.33.0",
+    "magic-string": "^1.4.5",
+    "mri": "^1.2.0",
+    "node-addon-api": "^7.1.1",
+    "picocolors": "^1.1.1",
+    "picomatch": "^4.0.7",
+    "source-map-js": "^1.2.4",
+    "tailwindcss": "^4.3.5",
+    "tapable": "^2.3.4"
   },
-  "devDependencies": {
-    "daisyui": "^5.8.2"
-  }
+  "scripts": {
+    "server": "json-server --watch db.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zeynab-dadkhah/project-3.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/zeynab-dadkhah/project-3/issues"
+  },
+  "homepage": "https://github.com/zeynab-dadkhah/project-3#readme"
 }
