@@ -69,7 +69,7 @@ let fetchBrowse = async () => {
 fetchBrowse();
 
 
-//  کارت ها شدن عوض
+//  عوض شدن کارت ها
 let newBtn = document.querySelector(".newBtn")
 let bestBtn = document.querySelector(".bestBtn")
 let newList = document.querySelector(".newList")
@@ -88,5 +88,90 @@ bestBtn.addEventListener("click", function () {
     bestBtn.classList.add("on")
     newBtn.classList.remove("on")
 })
+
+
+let fetchNewProducts = async () => {
+
+    let resNew = await fetch("http://localhost:3000/newProducts");
+    let dataNew = await resNew.json();
+
+    let newList = document.querySelector(".newList");
+
+    dataNew.forEach((elem) => {
+
+        newList.innerHTML += `
+            <div class="card relative h-108 w-67 bg-(--card) pb-7 shadow-none">
+                <label class="like absolute top-7 right-6 cursor-pointer text-xl">
+                    <input type="checkbox" class="peer hidden">
+                    <i class="bi bi-heart text-(--sub) peer-checked:hidden"></i>
+                    <i class="bi bi-heart-fill hidden text-red-500 peer-checked:block"></i>
+                </label>
+
+                <figure class="mx-auto mt-16 mb-5 h-40 w-40">
+                    <img src="${elem.image}" alt="${elem.title}" class="pic h-40 w-40 object-contain">
+                </figure>
+
+                <div class="card-body items-center gap-0 p-0">
+                    <h2 class="name h-12 w-64 text-center text-base leading-6 text-(--tx)">${elem.title}</h2>
+                    <p class="price mt-3 text-2xl font-medium text-(--tx)">${elem.price}</p>
+
+                    <div class="card-actions mt-[19px]">
+                        <button class="btn buy h-12 w-45.75 rounded-lg border-0 bg-(--buy) text-sm font-medium text-white shadow-none">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        `;
+
+    });
+
+};
+
+fetchNewProducts();
+
+
+let fetchBestProducts = async () => {
+
+    let resBest = await fetch("http://localhost:3000/bestProducts");
+    let dataBest = await resBest.json();
+
+    let bestList = document.querySelector(".bestList");
+
+    dataBest.forEach((elem) => {
+
+        bestList.innerHTML += `
+            <div class="card relative h-108 w-67 bg-(--card) pb-7 shadow-none">
+                <label class="like absolute top-7 right-6 cursor-pointer text-xl">
+                    <input type="checkbox" class="peer hidden">
+                    <i class="bi bi-heart text-(--sub) peer-checked:hidden"></i>
+                    <i class="bi bi-heart-fill hidden text-red-500 peer-checked:block"></i>
+                </label>
+
+                <figure class="mx-auto mt-16 mb-5 h-40 w-40">
+                    <img src="${elem.image}" alt="${elem.title}" class="pic h-40 w-40 object-contain">
+                </figure>
+
+                <div class="card-body items-center gap-0 p-0">
+                    <h2 class="name h-12 w-64 text-center text-base leading-6 text-(--tx)">${elem.title}</h2>
+                    <p class="price mt-3 h-8 text-2xl font-medium text-(--tx)">${elem.price}</p>
+
+                    <div class="card-actions mt-[19px]">
+                        <button class="btn buy h-12 w-45.75 rounded-lg border-0 bg-(--buy) text-sm font-medium text-white shadow-none">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        `;
+
+    });
+
+};
+
+fetchBestProducts();
+
+
+
 
 
