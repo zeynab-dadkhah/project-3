@@ -217,5 +217,53 @@ let fetchFeature = async () => {
 fetchFeature();
 
 
+let fetchDiscount = async () => {
+
+    let resDiscount = await fetch("http://localhost:3000/discountProducts");
+    let dataDiscount = await resDiscount.json();
+
+    let deals = document.querySelector(".deals");
+
+    dataDiscount.forEach((elem) => {
+
+        deals.innerHTML += `
+            <div class="card deal relative h-108 w-67 bg-(--card) pb-7 shadow-none">
+
+                <label class="heart absolute top-7 right-6 cursor-pointer text-xl">
+                    <input type="checkbox" class="peer hidden">
+                    <i class="bi bi-heart text-(--sub) peer-checked:hidden"></i>
+                    <i class="bi bi-heart-fill hidden text-red-500 peer-checked:block"></i>
+                </label>
+
+                <figure class="mx-auto mt-16 mb-5 h-40 w-40">
+                    <img src="${elem.image}" alt="${elem.title}" class="photo h-40 w-40 object-contain">
+                </figure>
+
+                <div class="card-body items-center gap-0 p-0">
+                    <h2 class="tit h-12 w-64 text-center text-base leading-6 text-(--tx)">
+                        ${elem.title}
+                    </h2>
+
+                    <p class="cost mt-3 text-2xl font-medium text-(--tx)">
+                        ${elem.price}
+                    </p>
+
+                    <div class="card-actions mt-[19px]">
+                        <button class="btn get h-12 w-45.75 rounded-lg border-0 bg-(--buy) text-sm font-medium text-white shadow-none">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        `;
+
+    });
+
+};
+
+fetchDiscount();
+
+
 
 
